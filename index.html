@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=ai, initial-scale=1.0">
+    <title>Student Result</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,300;1,400;1,900&family=Rubik+Moonrocks&family=Satisfy&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+<marquee><h3>Students Marksheet </h3></marquee>
+<div>
+  <form action="/action_page.php">
+      <!--Bangla 1st paper sec-->
+    <label for="lname">Enter Bangla 1st paper number</label><br><br>
+    <input type="number" id="gnumber" name="Number" placeholder="CQ Number.."><br><br><br>
+<label for="lname">Enter Bangla 1st paper (MCQ) number</label><br><br>
+<input type="number" id="gnumber" name="Number" placeholder="MCQ Number..">
+
+   <div class="col-lg-4">
+    <div class="subject_section">
+       <div class="subject_body">
+          <img src="imgs/book_list/bangla_1st.jpg" class="img-fluid" />
+          <h3>Bangla 1st Paper</h3>
+          <p>Bangla 1st paper total number is: <b>100</b> <br>
+             You have got <strong class="student_bangla_first_cq_number">x</strong> out of <b>70</b> in CQ. <br>
+             You have got <strong class="student_bangla_first_mcq_number">x</strong> out of <b>30</b> in MCQ.<br>
+             Your 'Bangla 1st Papaer' grade point is: <strong class="student_bangla_first_grade_point">x</strong><br>
+             Your 'Bangla 1st Papaer' grade is: <strong class="student_bangla_first_grade">x</strong> 
+          </p>
+       </div>
+    </div>
+ </div> 
+
+    <!--Bangla 2nd paper sec-->
+<label for="lname">Enter Bangla 2nd paper number</label><br><br>
+<input type="number" id="gnumber" name="Number" placeholder="CQ Number..">
+
+<br><br><br>
+  
+<label for="lname">Enter Bangla 2nd paper (MCQ) number</label><br><br>
+<input type="number" id="gnumber" name="Number" placeholder="MCQ Number..">
+
+   <div class="col-lg-4">
+    <div class="subject_section">
+       <div class="subject_body">
+          <img src="imgs/book_list/bangla_2nd.jpg" class="img-fluid" />
+          <h3> Bangla 2nd paper</h3>
+          <p> Bangla 2nd paper total number is: <b>100</b> <br>
+             You have got <strong class="student_bangla_2nd_cq_number">x</strong> out of <b>70</b> in CQ. <br>
+             You have got <strong class="student_bangla_2nd_mcq_number">x</strong> out of <b>30</b> in MCQ.<br>
+             Your ' Bangla 2nd paper' grade point is: <strong class="student_bangla_2nd_grade_point">x</strong><br>
+             Your ' Bangla 2nd paper' grade is: <strong class="student_bangla_2nd_grade">x</strong> 
+          </p>
+       </div>
+    </div>
+ </div> 
+  <!--english 1st paper sec-->
+  
+<label for="lname">Enter English 1st paper number</label><br><br>
+<input type="number" id="gnumber" name="Number" placeholder="CQ Number..">
+
+<br><br><br>
+<label for="lname">Enter English 1st paper (mcq) number</label><br><br>
+<input type="number" id="gnumber" name="Number" placeholder="MCQ Number..">
+<div class="col-lg-4">
+  <div class="subject_section">
+     <div class="subject_body">
+        <img src="imgs/book_list/english_first.jpg" class="img-fluid" />
+        <h3> English 1st paper</h3>
+        <p> English 1st paper total number is: <b>100</b> <br>
+           You have got <strong class="student_english_1st_cq_number">x</strong> out of <b>70</b> in CQ. <br>
+           You have got <strong class="student_english_1st_mcq_number">x</strong> out of <b>30</b> in MCQ.<br>
+           Your ' English 1st paper' grade point is: <strong class="student_english_1st_grade_point">x</strong><br>
+           Your ' English 1st paper' grade is: <strong class="student_english_1st_grade">x</strong> 
+        </p>
+     </div>
+  </div>
+</div> 
+  <!---english 2nd paper sec-->
+<label for="lname">Enter English 2nd paper (CQ) number</label><br><br>
+<input type="number" id="gnumber" name="Number" placeholder="CQ Number..">
+
+<br><br><br>
+
+<label for="lname">Enter English 2nd paper (MCQ) number</label><br><br>
+<input type="number" id="gnumber" name="Number" placeholder="MCQ Number..">
+
+   <div class="col-lg-4">
+      <div class="subject_section">
+         <div class="subject_body">
+            <img src="imgs/book_list/English _2nd.jpg" class="img-fluid" />
+            <h3>  English 2nd paper</h3>
+            <p>  English 2nd paper total number is: <b>100</b> <br>
+               You have got <strong class="student_English _2nd_cq_number">x</strong> out of <b>70</b> in CQ. <br>
+               You have got <strong class="student_English _2nd_mcq_number">x</strong> out of <b>30</b> in MCQ.<br>
+               Your ' English 2nd paper' grade point is: <strong class="student_English _2nd_grade_point">x</strong><br>
+               Your '  English 2nd paper' grade is: <strong class="student_English _2nd_grade">x</strong> 
+            </p>
+         </div>
+      </div>
+   </div> 
+  
+
+  <!--math sec-->
+
+
+<label for="lname">Enter General Math (CQ) number</label><br><br>
+<input type="number" id="gnumber" name="Number" placeholder=" CQ Number..">
+
+<br><br><br>
+
+<label for="lname">Enter General Math (MCQ) number</label><br><br>
+<input type="number" id="gnumber" name="Number" placeholder=" MCQ Number..">
+
+   <div class="col-lg-4">
+      <div class="subject_section">
+         <div class="subject_body">
+            <img src="imgs/book_list/General Math.jpg" class="img-fluid" />
+            <h3> general Math </h3>
+            <p>  General Math total number is: <b>100</b> <br>
+               You have got <strong class="student_General Math_cq_number">x</strong> out of <b>70</b> in CQ. <br>
+               You have got <strong class="student_General Math_mcq_number">x</strong> out of <b>30</b> in MCQ.<br>
+               Your 'General Math' grade point is: <strong class="student_General Math_grade_point">x</strong><br>
+               Your ' General Math' grade is: <strong class="student_General Math_grade">x</strong> 
+            </p>
+         </div>
+      </div>
+   </div> 
+
+  <!-- Islam and Moral education sec-->
+
+<label for="lname">Enter Islam and Moral education (CQ) number</label><br><br>
+<input type="number" id="gnumber" name="Number" placeholder="CQ Number..">
+<br><br><br>
+
+<label for="lname">Enter Islam and moral education (MCQ) number</label><br><br>
+<input type="number" id="gnumber" name="Number" placeholder="MCQ Number..">
+
+   <div class="col-lg-4">
+      <div class="subject_section">
+         <div class="subject_body">
+            <img src="imgs/book_list/Islam and moral education.jpg" class="img-fluid" />
+            <h3> Islam and moral education  </h3>
+            <p> Islam and moral education  total number is: <b>100</b> <br>
+               You have got <strong class="student_Islam and moral education _cq_number">x</strong> out of <b>70</b> in CQ. <br>
+               You have got <strong class="student_Islam and moral education _mcq_number">x</strong> out of <b>30</b> in MCQ.<br>
+               Your 'Islam and moral education ' grade point is: <strong class="student_Islam and moral education _grade_point">x</strong><br>
+               Your ' Islam and moral education ' grade is: <strong class="student_Islam and moral education _grade">x</strong> 
+            </p>
+         </div>
+      </div>
+   </div>
+
+  <!--Global studies sec-->
+
+    <label for="lname">Enter Global studies(CQ) number</label><br><br>
+    <input type="number" id="gnumber" name="Number" placeholder="CQ Number..">
+
+<br><br><br>
+
+<label for="lname">Enter Global studies (MCQ) number</label><br><br>
+<input type="number" id="gnumber" name="Number" placeholder="MCQ Number..">
+
+
+   <div class="col-lg-4">
+      <div class="subject_section">
+         <div class="subject_body">
+            <img src="imgs/book_list/Global studies.jpg" class="img-fluid" />
+            <h3> Global studies education  </h3>
+            <p> Global studies total number is: <b>100</b> <br>
+               You have got <strong class="student_Global studies _cq_number">x</strong> out of <b>70</b> in CQ. <br>
+               You have got <strong class="student_Global studies _mcq_number">x</strong> out of <b>30</b> in MCQ.<br>
+               Your 'Global studies' grade point is: <strong class="student_Global studies _grade_point">x</strong><br>
+               Your ' Global studies' grade is: <strong class="student_Global studies _grade">x</strong> 
+            </p>
+         </div>
+      </div>
+   </div>
+  <!--Higher Math sec-->
+    <label for="lname">Enter Higher Math (CQ))number</label><br><br>
+    <input type="number" id="hnumber" name="Number" placeholder="CQ Number..">
+<br><br><br>
+<label for="lname">Enter Higher Math (MCQ) number</label><br><br>
+<input type="number" id="hnumber" name="Number" placeholder="MCQ Number..">
+
+   <div class="col-lg-4">
+      <div class="subject_section">
+         <div class="subject_body">
+            <img src="imgs/book_list/Higher Math.jpg" class="img-fluid" />
+            <h3> Higher Math </h3>
+            <p>  Higher Math total number is: <b>100</b> <br>
+               You have got <strong class="student_Higher Math_cq_number">x</strong> out of <b>70</b> in CQ. <br>
+               You have got <strong class="student_Higher Math_mcq_number">x</strong> out of <b>30</b> in MCQ.<br>
+               Your 'Higher Math' grade point is: <strong class="student_Higher Math_grade_point">x</strong><br>
+               Your ' Higher Math' grade is: <strong class="student_Higher Math_grade">x</strong> 
+            </p>
+         </div>
+      </div>
+   </div> 
+  <!--Chemistry sec-->
+    <label for="lname">Enter Chemistry (CQ) number</label><br><br>
+    <input type="number" id="cnumber" name="Number" placeholder="CQ Number..">
+<br><br><br>
+<label for="lname">Enter Chemistry (MCQ) number</label><br><br>
+<input type="number" id="cnumber" name="Number" placeholder="MCQ Number..">
+
+   <div class="col-lg-4">
+      <div class="subject_section">
+         <div class="subject_body">
+            <img src="imgs/book_list/ Chemistry.jpg" class="img-fluid" />
+            <h3>  Chemistry </h3>
+            <p>   Chemistry total number is: <b>100</b> <br>
+               You have got <strong class="student_ Chemistry_cq_number">x</strong> out of <b>70</b> in CQ. <br>
+               You have got <strong class="student_ Chemistry_mcq_number">x</strong> out of <b>30</b> in MCQ.<br>
+               Your ' Chemistry' grade point is: <strong class="student_ Chemistry_grade_point">x</strong><br>
+               Your '  Chemistryh' grade is: <strong class="student_ Chemistry_grade">x</strong> 
+            </p>
+         </div>
+      </div>
+   </div> 
+
+  <!-- Biology sec-->
+
+
+
+<label for="lname">Enter Biology number</label><br><br>
+<input type="number" id="bnumber" name="Number" placeholder="Subjective Number.."><br><br><br>
+
+
+<label for="lname">Enter Biology (CQ) number</label><br><br>
+<input type="number" id="bnumber" name="Number" placeholder="CQ Number..">
+
+  <div class="col-lg-4">
+   <div class="subject_section">
+      <div class="subject_body">
+         <img src="imgs/book_list/ Biology.jpg" class="img-fluid" />
+         <h3> Biology </h3>
+         <p>   Biology total number is: <b>100</b> <br>
+            You have got <strong class="student_ Biology_cq_number">x</strong> out of <b>70</b> in CQ. <br>
+            You have got <strong class="student_ Biology_mcq_number">x</strong> out of <b>30</b> in MCQ.<br>
+            Your ' Biology' grade point is: <strong class="student_ Biology_grade_point">x</strong><br>
+            Your '  Biology' grade is: <strong class="student_ Biology_grade">x</strong> 
+         </p>
+      </div>
+   </div>
+</div> 
+  <!--Physics sec-->
+<label for="lname">Enter Physics(CQ)  number</label><br><br>
+<input type="number" id="pnumber" name="Number" placeholder="(CQ) Number..">
+<br><br><br>
+
+
+<label for="lname">Enter Physics (MCQ) number</label><br><br>
+<input type="number" id="pnumber" name="Number" placeholder="MCQ Number..">
+
+  <div class="col-lg-4">
+   <div class="subject_section">
+      <div class="subject_body">
+         <img src="imgs/book_list/ Physics.jpg" class="img-fluid" />
+         <h3> Physics </h3>
+         <p>   Physics total number is: <b>100</b> <br>
+            You have got <strong class="student_ Physics_cq_number">x</strong> out of <b>70</b> in CQ. <br>
+            You have got <strong class="student_ Physics_mcq_number">x</strong> out of <b>30</b> in MCQ.<br>
+            Your 'Physics' grade point is: <strong class="student_ Physics_grade_point">x</strong><br>
+            Your ' Physics' grade is: <strong class="student_ Physics_grade">x</strong> 
+         </p>
+      </div>
+   </div>
+</div> 
+
+  <!--ict sec-->
+  <label for="lname">Enter ICT (CQ)  number</label><br><br>
+  <input type="number" id="pnumber" name="Number" placeholder="(CQ) Number..">
+  <br><br><br>
+  
+  
+  <label for="lname">Enter ICT (MCQ) number</label><br><br>
+  <input type="number" id="pnumber" name="Number" placeholder="MCQ Number..">
+  
+    <div class="col-lg-4">
+     <div class="subject_section">
+        <div class="subject_body">
+           <img src="imgs/book_list/ICT.jpg" class="img-fluid" />
+           <h3>ICT </h3>
+           <p>ICT total number is: <b>100</b> <br>
+              You have got <strong class="student_ ICT_cq_number">x</strong> out of <b>70</b> in CQ. <br>
+              You have got <strong class="student_ ICT_mcq_number">x</strong> out of <b>30</b> in MCQ.<br>
+              Your 'ICT' grade point is: <strong class="student_ ICT_grade_point">x</strong><br>
+              Your ' ICT' grade is: <strong class="student_ ICT_grade">x</strong> 
+           </p>
+        </div>
+     </div>
+  </div> 
+
+
+
+<input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
