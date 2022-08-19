@@ -483,28 +483,28 @@ btn.addEventListener("click", () => {
         function get_cgpa_grade_only(total_cgpa_point) {
             if (total_cgpa_point >= 4) {
                 return " A+"
-            } else if (total_cgpa_point > 3.50 && total_cgpa_point <= 3.75) {
+            } else if (total_cgpa_point >= 3.75 && total_cgpa_point < 4 ) {
                 return "A"
 
-            } else if (total_cgpa_point > 3.25 && total_cgpa_point <= 3.50) {
+            } else if (total_cgpa_point >= 3.50 && total_cgpa_point < 3.75) {
                 return "A-"
 
-            } else if (total_cgpa_point > 3.00 && total_cgpa_point <= 3.25) {
+            } else if (total_cgpa_point >= 3.25 && total_cgpa_point <= 3.50) {
                 return "B+"
 
-            } else if (total_cgpa_point > 2.75 && total_cgpa_point <= 3.00) {
+            } else if (total_cgpa_point >= 3.00 && total_cgpa_point <= 3.25) {
                 return "B"
 
-            } else if (total_cgpa_point > 2.50 && total_cgpa_point <= 2.75) {
+            } else if (total_cgpa_point >= 2.75 && total_cgpa_point < 3.00) {
                 return "B-"
 
-            }else if (total_cgpa_point > 2.25 && total_cgpa_point <= 2.50) {
+            }else if (total_cgpa_point >= 2.50 && total_cgpa_point < 2.75) {
                 return "C+"
 
-            }else if (total_cgpa_point > 2.00 && total_cgpa_point <= 2.25) {
+            }else if (total_cgpa_point >= 2.25 && total_cgpa_point < 2.50) {
                 return "C"
 
-            }else if (total_cgpa_point > 0 && total_cgpa_point <= 2.00) {
+            }else if (total_cgpa_point >= 2.00 && total_cgpa_point < 2.25) {
                 return "D"
 
             } else {
