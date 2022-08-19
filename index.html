@@ -612,6 +612,96 @@
     </div>
 
     <a class="btn btn-primary input_field_empty d-none" data-bs-toggle="modal" href="#not_fill_up_the_form" role="button">Input_field_empty</a>
+
+
+
+
+
+        <!-- This is modal section. When user Input invalid CQ number  -->
+        <div class="modal fade" id="invalid_cq_number" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+         <div class="modal-dialog modal-dialog-centered">
+           <div class="modal-content">
+             <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalToggleLabel">info: </h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+   
+            <div class="alert alert-danger">
+                <span class="glyphicon glyphicon-hand-right"></span> <strong> Reached the highest CQ number</strong>
+                <hr class="message-inner-separator">
+                <p>
+                    Student cannot get more than 70 numbers in CQ. Please check your CQ input field and try again. </p>
+            </div>
+   
+             </div>
+           </div>
+         </div>
+       </div>
+   
+       <a class="btn btn-primary invalid_cq_number d-none" data-bs-toggle="modal" href="#invalid_cq_number" role="button">invalid_cq_number</a>
+
+
+
+
+
+
+
+
+
+
+           <!-- This is modal section. When user input invalid MCQ number  -->
+           <div class="modal fade" id="invalid_mcq_number" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel">info: </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+      
+               <div class="alert alert-danger">
+                   <span class="glyphicon glyphicon-hand-right"></span> <strong>Reached the highest MCQ number</strong>
+                   <hr class="message-inner-separator">
+                   <p>
+                     Student cannot get more than 30 numbers in MCQ. Please check your MCQ input field and try again.</p>
+               </div>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <a class="btn btn-primary invalid_mcq_number d-none" data-bs-toggle="modal" href="#invalid_mcq_number" role="button">invalid_mcq_number</a>
+
+
+
+
+
+          
+           <!-- This is modal section. When user input invalid English number  -->
+    <div class="modal fade" id="invalid_english_number" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel">info: </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+         <div class="alert alert-danger">
+             <span class="glyphicon glyphicon-hand-right"></span> <strong>Reached the highest English number</strong>
+             <hr class="message-inner-separator">
+             <p>
+               Student cannot get more than 100 numbers in English subject(s). Please check your English subject(s)'s input field and try again.</p>
+         </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="btn btn-primary invalid_english_number d-none" data-bs-toggle="modal" href="#invalid_english_number" role="button">invalid_english_number</a>
     <script src="app.js"></script>
 </body>
 </html>
