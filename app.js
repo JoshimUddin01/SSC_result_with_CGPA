@@ -88,12 +88,12 @@ btn.addEventListener("click", () => {
 
 
 
-    if (subject_data_object.bangla.first.cq.length < 1 || subject_data_object.bangla.first.mcq.length < 1 || subject_data_object.bangla.secound.cq.length < 1 || subject_data_object.bangla.secound.mcq.length < 1 || subject_data_object.english.first.total.length < 1 || subject_data_object.english.secound.total.length < 1 || subject_data_object.gmath.cq.length < 1 || subject_data_object.gmath.mcq.length < 1 || subject_data_object.islam.cq.length < 1 || subject_data_object.islam.mcq.length < 1 || subject_data_object.higher_math.cq.length < 1 || subject_data_object.higher_math.mcq.length < 1 || subject_data_object.pysics.cq.length < 1 || subject_data_object.pysics.mcq.length < 1 || subject_data_object.chemestry.cq.length < 1 || subject_data_object.chemestry.mcq.length < 1 || subject_data_object.global.cq.length < 1 || subject_data_object.global.mcq.length < 1) {
+    // if (subject_data_object.bangla.first.cq.length < 1 || subject_data_object.bangla.first.mcq.length < 1 || subject_data_object.bangla.secound.cq.length < 1 || subject_data_object.bangla.secound.mcq.length < 1 || subject_data_object.english.first.total.length < 1 || subject_data_object.english.secound.total.length < 1 || subject_data_object.gmath.cq.length < 1 || subject_data_object.gmath.mcq.length < 1 || subject_data_object.islam.cq.length < 1 || subject_data_object.islam.mcq.length < 1 || subject_data_object.higher_math.cq.length < 1 || subject_data_object.higher_math.mcq.length < 1 || subject_data_object.pysics.cq.length < 1 || subject_data_object.pysics.mcq.length < 1 || subject_data_object.chemestry.cq.length < 1 || subject_data_object.chemestry.mcq.length < 1 || subject_data_object.global.cq.length < 1 || subject_data_object.global.mcq.length < 1) {
 
-        let alaert_modal = document.querySelector(".input_field_empty");
+    //     let alaert_modal = document.querySelector(".input_field_empty");
 
-        alaert_modal.click()
-    } else {
+    //     alaert_modal.click()
+    // } else {
         if (subject_data_object.bangla.first.cq > 70 ||  subject_data_object.bangla.secound.cq > 70 ||  subject_data_object.gmath.cq > 70 || subject_data_object.islam.cq > 70  || subject_data_object.higher_math.cq > 70  || subject_data_object.pysics.cq > 70  > 70 || subject_data_object.chemestry.cq > 70|| subject_data_object.global.cq > 70 ) {
            
             let invalid_cq_number_modal = document.querySelector(".invalid_cq_number");
@@ -181,6 +181,10 @@ function get_grade_point(subject_total_number) {
 }
 
 
+
+// Student fail array
+let failed_subjects = [];
+
 //result section step by step subject value
 //Bangla 1st paper
 let bangla_first_cq_number = parseInt(subject_data_object.bangla.first.cq);
@@ -195,6 +199,10 @@ bangla_first_grade_point.innerHTML = grade_point_bangla_first;
 let bangla_first_grade = document.querySelector(".student_bangla_first_grade");
 let grade_letter_bangla_first = get_grade(bangla_first_total_number);
 bangla_first_grade.innerHTML = grade_letter_bangla_first;
+
+if(bangla_first_grade.innerHTML === "Fail") {
+    failed_subjects.push("Bangla 1st paper, ")
+}
 
 
 let bangla_first_cq_number_show = document.querySelector(".student_bangla_first_cq_number");
@@ -217,6 +225,10 @@ bangla_sec_grade_point.innerHTML = grade_point_bangla_sec;
 let bangla_sec_grade = document.querySelector(".student_bangla_sec_grade");
 let grade_letter_bangla_sec = get_grade(bangla_sec_total_number);
 bangla_sec_grade.innerHTML = grade_letter_bangla_sec;
+
+if(bangla_sec_grade.innerHTML === "Fail") {
+    failed_subjects.push("Bangla 2nd paper, ")
+}
 
 
 let bangla_sec_cq_number_show = document.querySelector(".student_bangla_sec_cq_number");
@@ -241,6 +253,10 @@ let english_first_grade = document.querySelector(".student_english_first_grade")
 let grade_letter_english_first = get_grade(english_first_total_number);
 english_first_grade.innerHTML = grade_letter_english_first;
 
+if(english_first_grade.innerHTML === "Fail") {
+    failed_subjects.push("English 1st paper, ")
+}
+
 
 //English 2nd paper
 let english_sec_total_number = parseInt(subject_data_object.english.secound.total);
@@ -257,6 +273,11 @@ let english_sec_grade = document.querySelector(".student_english_sec_grade");
 let grade_letter_english_sec = get_grade(english_sec_total_number);
 english_sec_grade.innerHTML = grade_letter_english_sec;
 
+if(english_sec_grade.innerHTML === "Fail") {
+    failed_subjects.push("English 2nd paper, ")
+}
+
+
 //Genarel Math 
 let gmath_cq_number = parseInt(subject_data_object.gmath.cq);
 let gmath_mcq_number = parseInt(subject_data_object.gmath.mcq);
@@ -271,6 +292,11 @@ gmath_grade_point.innerHTML = grade_point_gmath;
 let gmath_grade = document.querySelector(".student_gmath_grade");
 let grade_letter_gmath = get_grade(gmath_total_number);
 gmath_grade.innerHTML = grade_letter_gmath;
+
+if(gmath_grade.innerHTML === "Fail") {
+    failed_subjects.push("Genarel math, ")
+}
+
 
 
 
@@ -298,6 +324,10 @@ let islam_grade = document.querySelector(".student_islam_number_grade");
 let grade_letter_islam = get_grade(islam_total_number);
 islam_grade.innerHTML = grade_letter_islam;
 
+if(islam_grade.innerHTML === "Fail") {
+    failed_subjects.push("Islam and moral education, ")
+}
+
 
 
 let islam_cq_number_show = document.querySelector(".student_islam_cq_number");
@@ -322,6 +352,11 @@ let higher_math_grade = document.querySelector(".student_higher_math_grade");
 let grade_letter_higher_math = get_grade(higher_math_total_number);
 higher_math_grade.innerHTML = grade_letter_higher_math;
 
+if(higher_math_grade.innerHTML === "Fail") {
+    failed_subjects.push("Higher math, ")
+}
+
+
 
 
 let higher_math_cq_number_show = document.querySelector(".student_higher_math_cq_number");
@@ -345,6 +380,10 @@ pysics_grade_point.innerHTML = grade_point_pysics;
 let pysics_grade = document.querySelector(".student_pysics_grade");
 let grade_letter_pysics = get_grade(pysics_total_number);
 pysics_grade.innerHTML = grade_letter_pysics;
+
+if(pysics_grade.innerHTML === "Fail") {
+    failed_subjects.push("Pysics, ")
+}
 
 
 
@@ -372,6 +411,10 @@ let chemestry_grade = document.querySelector(".student_chemestryt_grade");
 let grade_letter_chemestry = get_grade(chemestry_total_number);
 chemestry_grade.innerHTML = grade_letter_chemestry;
 
+if(chemestry_grade.innerHTML === "Fail") {
+    failed_subjects.push("Chemestry, ")
+}
+
 
 
 
@@ -397,6 +440,11 @@ let grade_letter_biology = get_grade(biology_total_number);
 biology_grade.innerHTML = grade_letter_biology;
 
 
+if(biology_grade.innerHTML === "Fail") {
+    failed_subjects.push("Biology, ")
+}
+
+
 
 let biology_cq_number_show = document.querySelector(".student_biology_cq_number");
 biology_cq_number_show.innerHTML = biology_cq_number;
@@ -420,7 +468,9 @@ let global_grade = document.querySelector(".student_global_grade");
 let grade_letter_global = get_grade(global_total_number);
 global_grade.innerHTML = grade_letter_global;
 
-
+if(global_grade.innerHTML === "Fail") {
+    failed_subjects.push("Bangladesh and global, ")
+}
 
 let global_cq_number_show = document.querySelector(".student_global_cq_number");
 global_cq_number_show.innerHTML = global_cq_number;
@@ -428,6 +478,22 @@ global_cq_number_show.innerHTML = global_cq_number;
 let global_mcq_number_show = document.querySelector(".student_global_mcq_number");
 global_mcq_number_show.innerHTML = global_mcq_number;
 
+console.log(failed_subjects)
+
+//Showing the failed subjects
+
+let all_subjects="";
+let failed_subjects_show = document.querySelector(".failed_subject_sec")
+for(let i = 0; i < failed_subjects.length; i++) {
+  all_subjects+=failed_subjects[i];
+}
+failed_subjects_show.innerHTML= "You failed in " +  "<mark>" + all_subjects + "</mark> " + " subject(s) " + " and your result cannot be shown" + " <mark class='link_to_the_see_why_modal'>see why</mark>"
+let mark_link_click = document.querySelector(".link_to_the_see_why_modal");
+mark_link_click.addEventListener("click", ()=>{
+    
+    let if_fail_modal = document.querySelector(".if_fail");
+    if_fail_modal.click()
+})
 
 
 //CGPA Calculation section started
@@ -543,7 +609,7 @@ function get_cgpa_grade_only(total_cgpa_point) {
         }
         
         
-    }
+    // }
 })
 
 //For showing the result when user press "Enter" Button insted of click on "Get CGPA" btn
@@ -552,4 +618,3 @@ document.addEventListener("keydown", (e)=>{
       btn.click()
     }
 })
-
