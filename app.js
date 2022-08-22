@@ -88,12 +88,12 @@ btn.addEventListener("click", () => {
 
 
 
-    // if (subject_data_object.bangla.first.cq.length < 1 || subject_data_object.bangla.first.mcq.length < 1 || subject_data_object.bangla.secound.cq.length < 1 || subject_data_object.bangla.secound.mcq.length < 1 || subject_data_object.english.first.total.length < 1 || subject_data_object.english.secound.total.length < 1 || subject_data_object.gmath.cq.length < 1 || subject_data_object.gmath.mcq.length < 1 || subject_data_object.islam.cq.length < 1 || subject_data_object.islam.mcq.length < 1 || subject_data_object.higher_math.cq.length < 1 || subject_data_object.higher_math.mcq.length < 1 || subject_data_object.pysics.cq.length < 1 || subject_data_object.pysics.mcq.length < 1 || subject_data_object.chemestry.cq.length < 1 || subject_data_object.chemestry.mcq.length < 1 || subject_data_object.global.cq.length < 1 || subject_data_object.global.mcq.length < 1) {
+    if (subject_data_object.bangla.first.cq.length < 1 || subject_data_object.bangla.first.mcq.length < 1 || subject_data_object.bangla.secound.cq.length < 1 || subject_data_object.bangla.secound.mcq.length < 1 || subject_data_object.english.first.total.length < 1 || subject_data_object.english.secound.total.length < 1 || subject_data_object.gmath.cq.length < 1 || subject_data_object.gmath.mcq.length < 1 || subject_data_object.islam.cq.length < 1 || subject_data_object.islam.mcq.length < 1 || subject_data_object.higher_math.cq.length < 1 || subject_data_object.higher_math.mcq.length < 1 || subject_data_object.pysics.cq.length < 1 || subject_data_object.pysics.mcq.length < 1 || subject_data_object.chemestry.cq.length < 1 || subject_data_object.chemestry.mcq.length < 1 || subject_data_object.global.cq.length < 1 || subject_data_object.global.mcq.length < 1) {
 
-    //     let alaert_modal = document.querySelector(".input_field_empty");
+        let alaert_modal = document.querySelector(".input_field_empty");
 
-    //     alaert_modal.click()
-    // } else {
+        alaert_modal.click()
+    } else {
         if (subject_data_object.bangla.first.cq > 70 ||  subject_data_object.bangla.secound.cq > 70 ||  subject_data_object.gmath.cq > 70 || subject_data_object.islam.cq > 70  || subject_data_object.higher_math.cq > 70  || subject_data_object.pysics.cq > 70  > 70 || subject_data_object.chemestry.cq > 70|| subject_data_object.global.cq > 70 ) {
            
             let invalid_cq_number_modal = document.querySelector(".invalid_cq_number");
@@ -609,7 +609,7 @@ function get_cgpa_grade_only(total_cgpa_point) {
         }
         
         
-    // }
+    }
 })
 
 //For showing the result when user press "Enter" Button insted of click on "Get CGPA" btn
