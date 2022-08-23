@@ -603,6 +603,7 @@ function get_cgpa_grade_only(total_cgpa_point) {
 
 
 }
+
                     
                 }
             }
